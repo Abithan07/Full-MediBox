@@ -1,0 +1,890 @@
+[
+    {
+        "id": "74e54062d783eb92",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "71687d182340a9f0",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "home",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "50e9b0afb5fe0a9c",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "71687d182340a9f0",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6fb62265b78cce12",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "https://test.mosquitto.org/",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "49305c573948d873",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ead7ad07f6cef4dc",
+        "type": "ui_group",
+        "name": "Medicine preset",
+        "tab": "5637b7d00867d6fe",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8e4bb33eb5849b9d",
+        "type": "ui_group",
+        "name": "Light Intensity",
+        "tab": "71687d182340a9f0",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5637b7d00867d6fe",
+        "type": "ui_tab",
+        "name": "Medicine",
+        "icon": "local_pharmacy",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "807fc52449887386",
+        "type": "ui_spacer",
+        "z": "74e54062d783eb92",
+        "name": "spacer",
+        "group": "8e4bb33eb5849b9d",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "21aef6acbf6be607",
+        "type": "ui_spacer",
+        "z": "74e54062d783eb92",
+        "name": "spacer",
+        "group": "8e4bb33eb5849b9d",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "be9d35cd94349ad5",
+        "type": "ui_spacer",
+        "z": "74e54062d783eb92",
+        "name": "spacer",
+        "group": "ead7ad07f6cef4dc",
+        "order": 2,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "6c5b394f8e54d319",
+        "type": "ui_spacer",
+        "z": "74e54062d783eb92",
+        "name": "spacer",
+        "group": "ead7ad07f6cef4dc",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "4fcf7ff0e8caf4df",
+        "type": "ui_group",
+        "name": "Humidity",
+        "tab": "71687d182340a9f0",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ad3e9868063964ba",
+        "type": "mqtt in",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "topic": "mqtt-TEMP",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6fb62265b78cce12",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "113f3199cd5cfd6b",
+                "053e0c0c4d283dc5"
+            ]
+        ]
+    },
+    {
+        "id": "113f3199cd5cfd6b",
+        "type": "ui_gauge",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "group": "50e9b0afb5fe0a9c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature Gauge",
+        "label": "degree celcius",
+        "format": "{{payload}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00eeff",
+            "#41d016",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "32",
+        "diff": false,
+        "className": "",
+        "x": 800,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "053e0c0c4d283dc5",
+        "type": "ui_chart",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "group": "50e9b0afb5fe0a9c",
+        "order": 3,
+        "width": 6,
+        "height": 3,
+        "label": "Temperature Variation",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 800,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69b9d52025684dab",
+        "type": "mqtt out",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "topic": "mqtt-CONT-FACTOR",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6fb62265b78cce12",
+        "x": 940,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "afe62569f36b5206",
+        "type": "mqtt out",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "topic": "mqtt-ANGLE",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6fb62265b78cce12",
+        "x": 910,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2abe02b4976e1dbb",
+        "type": "ui_slider",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "label": "Controlling factor",
+        "tooltip": "",
+        "group": "ead7ad07f6cef4dc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "1",
+        "step": "0.05",
+        "className": "",
+        "x": 630,
+        "y": 420,
+        "wires": [
+            [
+                "69b9d52025684dab"
+            ]
+        ]
+    },
+    {
+        "id": "ad598ba8f03fa7c6",
+        "type": "ui_slider",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "label": "Minimum Angle",
+        "tooltip": "",
+        "group": "ead7ad07f6cef4dc",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "120",
+        "step": 1,
+        "className": "",
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "afe62569f36b5206"
+            ]
+        ]
+    },
+    {
+        "id": "c569c2be39b62cad",
+        "type": "mqtt in",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "topic": "mqtt-LIGHT-INTENSITY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6fb62265b78cce12",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 400,
+        "y": 600,
+        "wires": [
+            [
+                "6d61ef1543d4c40f",
+                "1fda50070a185ad1"
+            ]
+        ]
+    },
+    {
+        "id": "bf74a2ab6ae439e7",
+        "type": "mqtt in",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "topic": "mqtt-MAX-INTENS-SIDE",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6fb62265b78cce12",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 720,
+        "wires": [
+            [
+                "d84ba939ee7c2a95"
+            ]
+        ]
+    },
+    {
+        "id": "6d61ef1543d4c40f",
+        "type": "ui_gauge",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "group": "8e4bb33eb5849b9d",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Light Intensity",
+        "label": "units",
+        "format": "{{payload}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#038791",
+            "#41d016",
+            "#ffd500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 840,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1fda50070a185ad1",
+        "type": "ui_chart",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "group": "8e4bb33eb5849b9d",
+        "order": 5,
+        "width": 6,
+        "height": 3,
+        "label": "Light Intensity Variations",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d84ba939ee7c2a95",
+        "type": "function",
+        "z": "74e54062d783eb92",
+        "name": "function 7",
+        "func": "if (msg.payload == \"Rg\"){\n    return{\n    payload: \"Right Side\"\n};\n}else if(msg.payload == \"Le\"){\n    return{\n    payload: \"Left Side\"\n};\n}else{\n    return{\n    payload: \"Cannot Identify the side\"\n};\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 720,
+        "wires": [
+            [
+                "f818b57ff6628aa9"
+            ]
+        ]
+    },
+    {
+        "id": "f818b57ff6628aa9",
+        "type": "ui_text",
+        "z": "74e54062d783eb92",
+        "group": "8e4bb33eb5849b9d",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "21",
+        "color": "#000000",
+        "x": 810,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "d57661cd570815bf",
+        "type": "ui_dropdown",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "label": "Select Medicine",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ead7ad07f6cef4dc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Default",
+                "value": "0",
+                "type": "str"
+            },
+            {
+                "label": "Medicine A",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Medicine B",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "Medicine C",
+                "value": "3",
+                "type": "str"
+            },
+            {
+                "label": "set manually",
+                "value": "4",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 200,
+        "y": 460,
+        "wires": [
+            [
+                "1281d1b0869d7b6e",
+                "abc64d3f0462148a"
+            ]
+        ]
+    },
+    {
+        "id": "1281d1b0869d7b6e",
+        "type": "function",
+        "z": "74e54062d783eb92",
+        "name": "function 8",
+        "func": "if (msg.payload == 0){\n    return{\n    payload: 0.75\n};\n}else if(msg.payload == 1){\n    return{\n    payload: 0.5\n};\n}else if(msg.payload == 2){\n    return{\n    payload: 0.68\n};\n}else if(msg.payload == 3){\n    return{\n    payload: 0.9\n};\n}else if(msg.payload == 4){\n    return{\n    payload: 0\n};\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "2abe02b4976e1dbb"
+            ]
+        ]
+    },
+    {
+        "id": "abc64d3f0462148a",
+        "type": "function",
+        "z": "74e54062d783eb92",
+        "name": "function 9",
+        "func": "if (msg.payload == 0){\n    return{\n    payload: 30\n};\n}else if(msg.payload == 1){\n    return{\n    payload: 100\n};\n}else if(msg.payload == 2){\n    return{\n    payload: 50\n};\n}else if(msg.payload == 3){\n    return{\n    payload: 75\n};\n}else if(msg.payload == 4){\n    return{\n    payload: 0\n};\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 480,
+        "wires": [
+            [
+                "ad598ba8f03fa7c6"
+            ]
+        ]
+    },
+    {
+        "id": "0f320af1053c2416",
+        "type": "ui_toast",
+        "z": "74e54062d783eb92",
+        "position": "dialog",
+        "displayTime": "5",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Remainder",
+        "name": "",
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "d3f789de913d9722"
+            ]
+        ]
+    },
+    {
+        "id": "38da150f08e202f0",
+        "type": "mqtt in",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "topic": "mqtt-ALARM-TRIGGERED",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6fb62265b78cce12",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 300,
+        "wires": [
+            [
+                "2c77011f9ed2e94a"
+            ]
+        ]
+    },
+    {
+        "id": "d3f789de913d9722",
+        "type": "mqtt out",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "topic": "mqtt-ALARM",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6fb62265b78cce12",
+        "x": 910,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2c77011f9ed2e94a",
+        "type": "function",
+        "z": "74e54062d783eb92",
+        "name": "function 10",
+        "func": "if(msg.payload == \"Push\"){\n    return{\n    payload: \"It's time to take Medicine\"\n};\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "0f320af1053c2416"
+            ]
+        ]
+    },
+    {
+        "id": "d127f9941e222e1c",
+        "type": "ui_text",
+        "z": "74e54062d783eb92",
+        "group": "50e9b0afb5fe0a9c",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "Medibox Temperature",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "21",
+        "color": "#000000",
+        "x": 590,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "e64a9ca99ed73a1b",
+        "type": "ui_text",
+        "z": "74e54062d783eb92",
+        "group": "4fcf7ff0e8caf4df",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "Medibox Humidity",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "21",
+        "color": "#000000",
+        "x": 590,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "13e8872489d2a4c2",
+        "type": "mqtt in",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "topic": "mqtt-HUM",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6fb62265b78cce12",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 220,
+        "wires": [
+            [
+                "2f02adad08360d2e",
+                "35001a1c09eebd54"
+            ]
+        ]
+    },
+    {
+        "id": "2f02adad08360d2e",
+        "type": "ui_gauge",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "group": "4fcf7ff0e8caf4df",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity Gauge",
+        "label": "Percentage",
+        "format": "{{payload}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00eeff",
+            "#41d016",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 780,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "35001a1c09eebd54",
+        "type": "ui_chart",
+        "z": "74e54062d783eb92",
+        "name": "",
+        "group": "4fcf7ff0e8caf4df",
+        "order": 3,
+        "width": 6,
+        "height": 3,
+        "label": "Humidity Variation",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    }
+]
